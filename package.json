@@ -8,8 +8,9 @@
   "license": "MIT",
   "dependencies": {
     "apollo-datasource-http": "^0.17.1",
-    "apollo-server": "^3.3.0",
+    "apollo-server-express": "^3.3.0",
     "axios": "^0.21.1",
+    "express": "^4.17.1",
     "graphql": "^15.5.2"
   },
   "scripts": {
