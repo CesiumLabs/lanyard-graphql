@@ -20,8 +20,8 @@ const root = gql`
   }
 
   type Timestamps {
-    start: Int
-    end: Int
+    start: Float
+    end: Float
   }
 
   type Activities {
