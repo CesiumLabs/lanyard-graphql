@@ -33,7 +33,7 @@ const root = gql`
     id: String
     flags: Int
     details: String
-    created_at: Int
+    created_at: Float
     assets: Assets
     party: Party
     timestamps: Timestamps
