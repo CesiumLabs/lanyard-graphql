@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node .",
+    "start": "tsc && node dist/main.js",
     "dev": "nodemon src/main.ts"
   },
   "devDependencies": {

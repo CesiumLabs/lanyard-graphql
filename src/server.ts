@@ -13,6 +13,7 @@ class Server extends ApolloServer {
           LanyardAPI: new LanyardAPI(),
         };
       },
+      introspection: true,
     });
   }
 }
