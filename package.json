@@ -13,8 +13,8 @@
     "graphql": "^15.5.2"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "tsc && node dist/main.js",
+    "build": "yarn add typescript && yarn run tsc",
+    "start": "yarn add typescript && yarn run tsc && node dist/main.js",
     "dev": "nodemon src/main.ts"
   },
   "devDependencies": {
