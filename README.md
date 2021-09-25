@@ -2,7 +2,7 @@
 
 This is an port of [Lanyard](https://github.com/Phineas/lanyard)'s REST API in GraphQL.
 
-Lanyard is a RESTful API and websocket which is powered by a Discord bot. [Read the README](https://github.com/Phineas/lanyard#readme) and [join their Discord Server](https://discord.gg/WScAm7vNGF) for it to work.
+Lanyard is a RESTful API and websocket which is powered by a Discord bot, which exposes your Discord status to a REST API in less than 10 seconds. [Read the README](https://github.com/Phineas/lanyard#readme) and [join their Discord server](https://discord.gg/WScAm7vNGF) for it to work.
 
 ## Get Started
 
