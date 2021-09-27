@@ -1,6 +1,8 @@
 # Lanyard GraphQL API
 
-This is an port of [Lanyard](https://github.com/Phineas/lanyard)'s REST API in GraphQL.
+This is an port of [Lanyard](https://github.com/Phineas/lanyard)'s REST API in GraphQL.  
+
+**This is in no way endorsed by the Lanyard developers.**  
 
 Lanyard is a RESTful API and websocket which is powered by a Discord bot, which exposes your Discord status to a REST API in less than 10 seconds. [Read the README](https://github.com/Phineas/lanyard#readme) and [join their Discord server](https://discord.gg/WScAm7vNGF) for it to work.
 
