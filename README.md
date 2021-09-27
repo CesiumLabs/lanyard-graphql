@@ -98,7 +98,7 @@ Response:
 }
 ```  
 
-Full documentation on API on Apollo Studio.
+Full documentation of API on Apollo Studio.
 
 
 ### Locally
