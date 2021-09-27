@@ -6,7 +6,100 @@ Lanyard is a RESTful API and websocket which is powered by a Discord bot, which 
 
 ## Get Started
 
-This is not deployed, but will be (with adjustments) in the future.
+🎉 Deployed! Use it right now at https://lanyard.ymarc.us. Explore the API on [Apollo Studio](https://studio.apollographql.com/sandbox?endpoint=https://lanyard.ymarc.us). Here's an example query:  
+```gql
+{
+  ping
+}
+```  
+Response:
+
+```json
+{
+  "data": {
+    "ping": "Pong!"
+  }
+}
+```  
+A more complicated query:
+
+```gql
+{
+  ping
+  api(id: "YOUR_ID_HERE") {
+    success
+    data {
+      discord_user {
+        username
+      }
+      spotify {
+        song
+      }
+      listening_to_spotify
+      active_on_discord_desktop
+      active_on_discord_mobile
+      activities {
+        name
+        state
+        type
+        details
+        timestamps {
+          start
+        }
+      }
+      discord_status
+    }
+  }
+}
+```  
+
+Response:  
+
+```json
+{
+  "data": {
+    "ping": "Pong!",
+    "api": {
+      "success": true,
+      "data": {
+        "discord_user": {
+          "username": "geneva"
+        },
+        "spotify": {
+          "song": "Crimewave"
+        },
+        "listening_to_spotify": true,
+        "active_on_discord_desktop": true,
+        "active_on_discord_mobile": false,
+        "activities": [
+          {
+            "name": "Visual Studio Code",
+            "state": "Working on wellfare",
+            "type": 0,
+            "details": "⌨️ Editing signup.tsx",
+            "timestamps": {
+              "start": 1632769111777
+            }
+          },
+          {
+            "name": "Spotify",
+            "state": "Crystal Castles",
+            "type": 2,
+            "details": "Crimewave",
+            "timestamps": {
+              "start": 1632769085304
+            }
+          }
+        ],
+        "discord_status": "dnd"
+      }
+    }
+  }
+}
+```  
+
+Full documentation on API on Apollo Studio.
+
 
 ### Locally
 
