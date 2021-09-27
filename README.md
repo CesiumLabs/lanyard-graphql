@@ -128,7 +128,7 @@ yarn start
 npm start
 ```
 
-Apollo Server should start running at http://localhost:4000/. To test it, you can use [Apollo Studio]("https://studio.apollographql.com/sandbox?endpoint=http%3A%2F%2Flocalhost%3A4000%2F").
+Apollo Server should start running at http://localhost:8080/. To test it, you can use [Apollo Studio]("https://studio.apollographql.com/sandbox?endpoint=http%3A%2F%2Flocalhost%3A8080%2F").
 
 ## License
 
