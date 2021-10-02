@@ -1,5 +1,5 @@
 import { ApolloServer } from "apollo-server";
-import LanyardAPI from "./DataSource";
+import LanyardAPI from "./data-source";
 import resolvers from "./resolvers";
 import typeDefs from "./schema";
 

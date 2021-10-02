@@ -1,5 +1,3 @@
-import LanyardAPI from "./DataSource";
-
 export interface LanyardAPIData {
   success: boolean;
   data: Data;
