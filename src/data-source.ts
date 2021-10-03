@@ -1,12 +1,13 @@
 import { HTTPDataSource } from "apollo-datasource-http";
 import { LanyardAPIData } from "./interfaces";
 import { Pool } from "undici";
+import { API_URL } from "./constants";
 
-const pool = new Pool("https://api.lanyard.rest");
+const pool = new Pool(API_URL);
 
 export default class LanyardAPI extends HTTPDataSource {
   constructor() {
-    super("https://api.lanyard.rest", {
+    super(API_URL, {
       pool,
       clientOptions: {
         bodyTimeout: 5000,
@@ -16,6 +17,6 @@ export default class LanyardAPI extends HTTPDataSource {
   }
 
   async getUser(user: string): Promise<LanyardAPIData> {
-    return (await this.get("/v1/users/" + user)) as unknown as LanyardAPIData;
+    return (await this.get(`/v1/users/${user}`)) as unknown as LanyardAPIData;
   }
 }

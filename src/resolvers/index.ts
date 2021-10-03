@@ -1,4 +1,3 @@
-import LanyardAPI from "../DataSource";
 import { LanyardAPIData } from "../interfaces";
 
 const Query = {

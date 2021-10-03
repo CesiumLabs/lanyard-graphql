@@ -1,4 +1,4 @@
-import server from "./Server";
+import server from "./server";
 
 server
   .listen(8080)
